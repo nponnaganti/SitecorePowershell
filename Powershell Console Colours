@@ -1,0 +1,7 @@
+#Nagendra Ponnaganti
+Write-Host "Hello World"
+Write-Host " f for ForegroundColor and b for BackgroundColor" -b Red
+[enum]::GetValues([System.ConsoleColor]) | Foreach-Object {Write-Host $_ -f $_}
+Write-Host "------- 1. Process complete for ForegroundColor  -------------" -f Green;
+[enum]::GetValues([System.ConsoleColor]) | Foreach-Object {Write-Host $_ -b $_}
+Write-Host "------- 2. Process complete for BackgroundColor  -------------" -f Green;
